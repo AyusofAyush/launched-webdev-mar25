@@ -1,0 +1,206 @@
+/* Universal css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Css */
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar Style below */
+
+.navbar-parent {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.nav-link {
+    padding: 12px 20px;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: white;
+    background-color: darkgray;
+    font-size: 16px;
+}
+
+.logo-div img {
+    max-height: 100%;
+    height: auto;
+}
+
+.navbar-parent>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-parent {
+        flex-direction: column;
+        height: auto;
+        border: 1px solid grey;
+    }
+
+    .navbar-parent>div {
+        padding: 10px;
+    }
+}
+
+/* main tag css below */
+
+.main-parent {
+    margin: 0 10%;
+    margin-top: 5%;
+    width: 80%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+    .main-parent {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.main-left {
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.main-left>div,
+h3,
+p,
+button {
+    margin: 10px 0;
+}
+
+.main-left h1 {
+    font-size: 40px;
+    color: grey;
+}
+
+.main-left h3 {
+    font-size: 24px;
+    color: red;
+}
+
+.main-left p {
+    font-size: 16px;
+    color: green;
+}
+
+.main-left .btn {
+    background: url(../assets/btn.png) no-repeat;
+    background-position: 0 -70px;
+    color: white;
+    display: inline-flex;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 150px;
+}
+
+.btn:hover {
+    background-position: 0 0;
+    color: orange;
+    cursor: pointer;
+}
+
+.main-right {
+    max-width: 50%;
+}
+
+.main-right img {
+    height: auto;
+    width: 200px;
+}
+
+/* Section css below */
+
+.section {
+    gap: 10px;
+    margin: 0 10px;
+    margin-top: 2%;
+    border-top: 1px solid lightgray;
+}
+
+.section h3 {
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.para-section>div {
+    padding: 10px;
+    font-size: 14px;
+    color: lightgreen;
+}
+
+@media screen and (max-width: 500px) {
+    .para-section {
+        flex-direction: column;
+    }
+}
+
+/* footer css below  */
+
+.footer {
+    margin-top: 5%;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 10px;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.social_icon {
+    gap: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
